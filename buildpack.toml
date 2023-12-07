@@ -1,0 +1,16 @@
+api = "0.8"
+
+[buildpack]
+id = "siestacat/crontab"
+name = "Crontab"
+version = "0.0.1"
+keywords = ["crontab", "cronjob", "crond"]
+description = "Install crontab contents from file"
+
+# Targets the buildpack will work with
+[[targets]]
+os = "linux"
+
+# Stacks (deprecated) the buildpack will work with
+[[stacks]]
+id = "heroku/builder:20"

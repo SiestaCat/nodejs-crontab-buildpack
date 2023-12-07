@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -eo pipefail
+
+if [ -f .crontab ]; then
+  echo ".crontab file located"
+  exit 0
+else
+  echo "Could not find .crontab file" >&2
+  exit 1
+fi

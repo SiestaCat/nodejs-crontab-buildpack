@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+set -eo pipefail
+
+echo "---> Nodejs Crontab Buildpack"
+
+RESOURCES=$(realpath $(dirname $0)/../resources)
+
+WORKSPACE_DIR=/workspace/crontab_buildpacks
+
+
+mkdir -p $WORKSPACE_DIR
+
+cp $RESOURCES/* $WORKSPACE_DIR
+
+ls -al /workspace
+ls -al $WORKSPACE_DIR
+
+cd $WORKSPACE_DIR
+
+npm ci
+

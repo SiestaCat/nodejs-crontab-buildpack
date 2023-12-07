@@ -1,0 +1,10 @@
+{
+  "name": "crontab-buildpacks",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-cron": "^3.0.3"
+  }
+}
