@@ -1,1 +1,2 @@
-* * * * * * php crontab.php
+*/10 * * * * * pwd
+*/10 * * * * * ls -al
